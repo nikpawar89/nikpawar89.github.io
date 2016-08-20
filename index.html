@@ -1,19 +1,74 @@
 <html>
-	<head> Mifos credit Bureau Integration</head>
+	<head> <h1> Mifos credit Bureau Integration - a Project by Nikhil Pawar</h1></head>
 	<body>
 		
 		
 		<p>
 			
-Mifos credit Bureau Extension is a vast project and has been divided into sub-modules as follows: <br>
+<h2><b><i>About me and my project</b></i> <br></h2>
+I am Nikhil Pawar, a Graduate Student at The University Of Texas at Arlington pursuing MS in Computer Science.
+As a part of my Google Summer of Code 2016 internship at Mifos Initiative, I have been working on 'Mifos Credit Bureau Integration'.
+Currently, there is no feature for reporting credit history in Mifos. This module will give ability to clients to check the credit history of the loan applicant and consequently mitigate the risk to bad debt.
+Along with checking, this Module would also allow client organizations to report to credit bureaus. 
+This feature of Credit reporting and credit checking  is optional and may be incorporated based on the requirements of the client organization <br><br>
+<i> Further details of project can be found at <a href=https://mifosforge.jira.com/wiki/pages/viewpage.action?pageId=134905860> more..</a></i> <br> <br>
 
-1)Credit bureau Configuration Module.<br>
 
-2)Address Module. <br>
-<a href=https://github.com/apache/incubator-fineract/pull/203>address module Pull Request been merged into Apache Fineract Repository</a>   <br> 
+			
+<h3> Mifos credit Bureau Integration is a vast project and has been divided into sub-modules as follows: <br> <br> </h3>
 
-3)Credit Bureau Communication <br>
+<h3> <b> 1) <u>Address Module.  </b></u> &nbsp &nbsp  Status: Completed <br> <br> </h3>
+<i> This module gives the ability to the user to add address for client entity in Mifos.<br>
+It is generic enough to extend to other modules. In order to use Credit Bureau, address Module should be enabled.<br>
+Further details can be found at<a href=https://mifosforge.jira.com/wiki/display/MIFOSX/Address> more..</a> <br><br>
+</i>
 
+
+<b><i>Backend:</b></i> <br>
+<a href=https://github.com/apache/incubator-fineract/pull/203>Address Module Backend </a>  <br> 
+<i>Commits:</i>
+<br>
+<a href=https://github.com/apache/incubator-fineract/commits/develop?author=nikpawar> Backend commit </a>   <br><br>
+
+<b><i>Font End: </b></i><br>
+<a href=https://github.com/openMF/community-app/pull/1601>Address Module FrontEnd </a>  <br>
+ <i>Commit</i>
+ <br>
+
+<a href= https://github.com/openMF/community-app/pull/1601/commits> Frontend commit </a>   <br><br>
+
+
+
+
+
+<h3> <b> 2) <u> Credit bureau Configuration Module. </b></u>&nbsp &nbsp Status:Completed.  <br><br> </h3>
+
+<i>
+	In order to use CreditBureau, the Mifos administrator has to do a one time configuration to integrate the CreditBureau with the Loan Product.
+</i>
+<br><br>
+Backend: <br>
+<a href=https://github.com/apache/incubator-fineract/pull/215>CreditBureau Configuration Module Backend </a>  <br><br>
+
+ <i>Commit</i>
+ <br>
+
+<a href=https://github.com/nikpawar89/incubator-fineract/commits/creditbureau?author=nikpawar> Backend commit </a>   <br><br>
+
+Front End: <br>
+
+<a href=https://github.com/openMF/community-app/pull/1603>CreditBureau Configuration Module FrontEnd </a>  <br><br>
+
+ <i>Commit</i>
+ <br>
+
+<a href=https://github.com/nikpawar89/community-app/commits/creditburea?author=nikpawar> Frontend commit </a>   <br><br>
+
+
+<h3> <b> 3) <u> Credit Bureau Communication. </b></u> &nbsp &nbsp Status:Work in Progress. <br><br> </h3>
+<i>
+We are currently testing the infrastructure. Once done, the integration would be initiated.
+</i>
 		</p>
 		
 	</body>
