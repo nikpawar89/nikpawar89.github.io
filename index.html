@@ -7,35 +7,31 @@
 			
 <h2><b><i>About me and my project</b></i> <br></h2>
 I am Nikhil Pawar, a Graduate Student at The University Of Texas at Arlington pursuing MS in Computer Science.
-As a part of my Google Summer of Code 2016 internship at Mifos Initiative, I have been working on 'Mifos Credit Bureau Integration'.
-Currently, there is no feature for reporting credit history in Mifos. This module will give ability to clients to check the credit history of the loan applicant and consequently mitigate the risk to bad debt.
+As a part of my Google Summer of Code 2017 internship at Apache Software Foundation, I have been working on 'Apache Fineract Credit Bureau Integration phase 2'.
+Currently, there is no feature for reporting credit history in Fineract. This module will give ability to clients to check the credit history of the loan applicant and consequently mitigate the risk to bad debt.
 Along with checking, this Module would also allow client organizations to report to credit bureaus. 
-This feature of Credit reporting and credit checking  is optional and may be incorporated based on the requirements of the client organization <br><br>
-<i> Further details of project can be found at <a href=https://mifosforge.jira.com/wiki/pages/viewpage.action?pageId=134905860> more..</a></i> <br> <br>
+		
+<h3> As a part of Apache Fineract credit Bureau Integration phase 2 following modules were developed: <br> <br> </h3>
 
-
-			
-<h3> Mifos credit Bureau Integration is a vast project and has been divided into sub-modules as follows: <br> <br> </h3>
-
-<h3> <b> 1) <u>Address Module.  </b></u> &nbsp &nbsp  Status: Completed <br> <br> </h3>
-<i> This module gives the ability to the user to add address for client entity in Mifos.<br>
-It is generic enough to extend to other modules. In order to use Credit Bureau, address Module should be enabled.<br>
-Further details can be found at<a href=https://mifosforge.jira.com/wiki/display/MIFOSX/Address> more..</a> <br><br>
+<h3> <b> 1) <u>Family Members module:  </b></u> &nbsp &nbsp  Status: Completed <br> <br> </h3>
+<i> This module was primarily designed and developed to support Credit buerau module.<br>
+Family members modules enables users to store details of family members in Fineract.<br>
+These details will be plugged in to credit bureau enquiry, so that credit bureau can rightly identitfy client's records. <br><br>
 </i>
 
 
 <b><i>Backend:</b></i> <br>
-<a href=https://github.com/apache/incubator-fineract/pull/203>Address Module Backend </a>  <br> 
+<a href=https://github.com/apache/fineract/pull/378>Family Members Module Backend </a>  <br> 
 <i>Commits:</i>
 <br>
-<a href=https://github.com/apache/incubator-fineract/commits/develop?author=nikpawar> Backend commit </a>   <br><br>
+<a href=https://github.com/apache/fineract/pull/378/commits> Backend commit </a>   <br><br>
 
 <b><i>Font End: </b></i><br>
-<a href=https://github.com/openMF/community-app/pull/1601>Address Module FrontEnd </a>  <br>
+<a href=https://github.com/openMF/community-app/pull/2415>Family Members Module FrontEnd </a>  <br>
  <i>Commit</i>
  <br>
 
-<a href= https://github.com/openMF/community-app/pull/1601/commits> Frontend commit </a>   <br><br>
+<a href=https://github.com/openMF/community-app/pull/2415/commits> Frontend commit </a>   <br><br>
 
 
 
@@ -44,31 +40,47 @@ Further details can be found at<a href=https://mifosforge.jira.com/wiki/display/
 <h3> <b> 2) <u> Credit bureau Configuration Module. </b></u>&nbsp &nbsp Status:Completed.  <br><br> </h3>
 
 <i>
-	In order to use CreditBureau, the Mifos administrator has to do a one time configuration to integrate the CreditBureau with the Loan Product.
+This module enables fineract to store configuration of credit bureau supported by Fineract.<br>
+It also enables users to map credit buerau products with loan products.
 </i>
 <br><br>
 Backend: <br>
-<a href=https://github.com/apache/incubator-fineract/pull/215>CreditBureau Configuration Module Backend </a>  <br><br>
+<a href=https://github.com/apache/fineract/pull/356>CreditBureau Configuration Module Backend </a>  <br><br>
 
  <i>Commit</i>
  <br>
 
-<a href=https://github.com/nikpawar89/incubator-fineract/commits/creditbureau?author=nikpawar> Backend commit </a>   <br><br>
+<a href=https://github.com/apache/fineract/pull/356/commits> Backend commit </a>   <br><br>
 
 Front End: <br>
 
-<a href=https://github.com/openMF/community-app/pull/1603>CreditBureau Configuration Module FrontEnd </a>  <br><br>
+<a href=https://github.com/openMF/community-app/pull/2318>CreditBureau Configuration Module FrontEnd </a>  <br><br>
 
  <i>Commit</i>
  <br>
 
-<a href=https://github.com/nikpawar89/community-app/commits/creditburea?author=nikpawar> Frontend commit </a>   <br><br>
+<a href=https://github.com/openMF/community-app/pull/2318/commits> Frontend commit </a>   <br><br>
 
 
-<h3> <b> 3) <u> Credit Bureau Communication. </b></u> &nbsp &nbsp Status:Work in Progress. <br><br> </h3>
+<h3> <b> 3) <u> Integration of Equifax with Apache Fineract. </b></u> &nbsp &nbsp Status:Work in Progress. <br><br> </h3>
 <i>
-We are currently testing the infrastructure. Once done, the integration would be initiated.
+Client for accessing Equifax India is partially completed.<br>
+We are now working with Equifax to get access to their sandbox environment for completion of this module.<br>
 </i>
+
+<br><br>
+
+<h3> <b> 3) <u> Group loan Individual monitoring and Group savings with individual monitoring POC </b></u> &nbsp &nbsp POC Status:Completed <br><br> </h3>
+<i>
+Group loan Individual monitoring and Group savings with individual monitoring<br>
+As an additional exercise, Group loan individual monitoring and Group Savings individual monitoring was developed.<br>
+This feature gives ability to users to track individual contributions for loan/savings account in group setting.<br>
+It is was done as additional exercise for feasibility study of GLIM and GSIM. After Equifax integration is done, GLIM and GSIM requirements would be <br>
+discussed in the community and accordingly this modification will be taken up.<br>
+</i>
+<br><br>
+Backend: <br>
+<a href=https://github.com/nikpawar89/incubator-fineract/tree/glimsprod> </a>  <br><br>
 		</p>
 		
 	</body>
